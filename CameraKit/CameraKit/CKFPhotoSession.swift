@@ -91,7 +91,7 @@ extension CKFSession.FlashMode {
             self.cameraDetection = detection
         }
         
-        self.session.sessionPreset = .high
+        self.session.sessionPreset = .photo
         self.session.addOutput(self.photoOutput)
     }
     
@@ -159,7 +159,7 @@ extension CKFSession.FlashMode {
                 {
                     deviceInput.device.activeFormat = format
                 } else {
-                    self.session.sessionPreset = .high
+                    self.session.sessionPreset = .photo
                 }
                 
                 deviceInput.device.unlockForConfiguration()
